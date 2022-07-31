@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    background: url(img/bg.jpg);
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board {
+    background: linear-gradient(rgb(183, 221, 183), rgb(244, 244, 185));
+    /* margin-right: 1px; */
+    width: 85vmin;
+    height: 85vmin;
+    border: 1px solid lightblue;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.head {
+    background: linear-gradient(rgb(205, 89, 89), rgb(201, 201, 102));
+    transform: scale(1.02);
+    border: 2px solid rgb(79, 34, 79);
+    border-radius: 9px;
+}
+
+#scoreBox {
+    position: absolute;
+    top: 9px;
+    right: 196px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+
+#HighscoreBox {
+    position: absolute;
+    top: 59px;
+    right: 122px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+
+.snake {
+    background-color: rgb(101, 230, 185);
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.food {
+    background: linear-gradient(red, purple);
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
